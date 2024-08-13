@@ -102,15 +102,13 @@ nav li a {
 }
 
 .intro-text h1 {
-  font-size: 4.9vw;
+  font-size: 5vw;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 
 .intro-text h2 {
   font-size: 3vw;
   font-weight: 500;
-  letter-spacing: 1.3px;
 }
 
 .intro-text p {
