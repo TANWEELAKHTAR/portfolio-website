@@ -30,6 +30,7 @@ body {
 .flex-center {
   align-items: center;
   justify-content: center;
+
 }
 
 *>img {
@@ -128,7 +129,7 @@ nav li a {
   gap: 1.5vw;
 }
 
-.intro-links>a {
+.intro-links a {
   text-decoration: none;
   font-size: 1.2vw;
   letter-spacing: .5px;
@@ -137,8 +138,9 @@ nav li a {
   border-radius: 10px;
 }
 
-.intro-social-links>a {
+.intro-social-links a {
   text-decoration: none;
+  border: none;
   font-size: 2.5vw;
   margin-right: 1.5vw;
 }
@@ -148,8 +150,6 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 1vw; */
-  /* background-color: rgb(27, 180, 129); */
 
 }
 
@@ -222,7 +222,6 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
 
 }
 
@@ -338,4 +337,55 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contact-logo{
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contact-logo h1{
+  font-size: 5vw;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+.contact-logo p{
+  font-size: 2vw;
+  font-family: Gilroy;
+  letter-spacing: 1px;
+  align-self: flex-start;
+}
+.contact-logo p a{
+  font-size: 2vw;
+  font-family: Gilroy;
+  text-decoration: underline;
+  align-self: flex-start;
+}
+.con-link{
+  margin-top: 1vw;
+}
+.con-link>a{
+  text-decoration: none;
+  font-size: 2.5vw;
+  margin-right: 1.5vw;
+}
+.contact-form{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-form form{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5vw;
+}
+.contact-form form > input{
+  width: 100%;
+  
 }
