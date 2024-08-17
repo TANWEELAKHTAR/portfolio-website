@@ -437,4 +437,6 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 
-.contact-form form>input:nth-last-child(1):hover {}
+.contact-form form>input:nth-last-child(1):hover {
+  background:#002D62;
+}
