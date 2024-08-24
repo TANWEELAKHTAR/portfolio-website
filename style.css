@@ -22,7 +22,7 @@ body {
   height: 100%;
 }
 
-*>img {
+* > img {
   width: 100%;
 }
 
@@ -30,8 +30,12 @@ body {
 #main {
   width: 100%;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
-
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 26%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 nav {
@@ -46,8 +50,12 @@ nav {
   align-items: center;
   border-radius: 10px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 26%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%);
-
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 26%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 nav ul {
@@ -86,7 +94,6 @@ nav li a {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-
 }
 
 .intro-text h1 {
@@ -103,7 +110,7 @@ nav li a {
   width: 75%;
   font-size: 1.2vw;
   font-weight: 500;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   margin-bottom: 1.5vw;
   font-family: Gilroy;
 }
@@ -118,17 +125,16 @@ nav li a {
 .intro-links a {
   text-decoration: none;
   font-size: 1.2vw;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   border: 1px solid #fff;
-  padding: .4vw .8vw;
+  padding: 0.4vw 0.8vw;
   border-radius: 10px;
 }
 
-.intro-social-links a {
+.intro-social-links > a {
   text-decoration: none;
   border: none;
   font-size: 2.5vw;
-  margin-right: 1.5vw;
 }
 
 .intro-image {
@@ -136,13 +142,11 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.intro-image>img {
+.intro-image > img {
   width: 80%;
   object-fit: cover;
-
 }
 
 .line-parition {
@@ -185,7 +189,6 @@ nav li a {
 .about-text h2 {
   font-size: 3vw;
   letter-spacing: 1px;
-
 }
 
 .about-text p {
@@ -193,7 +196,7 @@ nav li a {
   font-family: Gilroy;
 }
 
-.about-text>a {
+.about-text > a {
   text-transform: uppercase;
   margin-top: 1.5vw;
   font-size: 1vw;
@@ -208,7 +211,6 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .skill-logo {
@@ -216,7 +218,6 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
 }
 
 .skill-logo h1 {
@@ -234,7 +235,7 @@ nav li a {
   gap: 1vw;
 }
 
-.skill-images>img {
+.skill-images > img {
   width: 15%;
   object-fit: cover;
 }
@@ -269,9 +270,9 @@ nav li a {
   justify-content: center;
   flex-direction: column;
   gap: 1vw;
-
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
   scroll-behavior: smooth;
 }
@@ -367,7 +368,7 @@ nav li a {
   margin-top: 1vw;
 }
 
-.con-link>a {
+.con-link > a {
   text-decoration: none;
   font-size: 2.5vw;
   margin-right: 1.5vw;
@@ -389,25 +390,23 @@ nav li a {
   justify-content: center;
   flex-direction: column;
   padding: 2vw;
-  gap: .5vw;
+  gap: 0.5vw;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.075);
   box-shadow: 0px 0px 47px -8px rgb(0 0 0 / 20%);
-
 }
 
-.contact-form form>label {
+.contact-form form > label {
   width: 100%;
   font-size: 1.5vw;
   font-weight: 900;
   font-family: Gilroy;
-
 }
 
-.contact-form form>input {
+.contact-form form > input {
   width: 100%;
   font-size: 1.2vw;
-  padding: .7vw 1vw;
+  padding: 0.7vw 1vw;
   color: #fff;
   font-weight: 900;
   font-family: Gilroy;
@@ -418,10 +417,10 @@ nav li a {
   cursor: pointer;
 }
 
-.contact-form form>textarea {
+.contact-form form > textarea {
   width: 100%;
   font-size: 1vw;
-  padding: 2vw .7vw;
+  padding: 2vw 0.7vw;
   resize: none;
   overflow: auto;
   color: black;
@@ -437,6 +436,174 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 
-.contact-form form>input:nth-last-child(1):hover {
-  background:#002D62;
+.contact-form form > input:nth-last-child(1):hover {
+  background: #002d62;
+}
+
+@media (max-width: 426px) {
+  /* Introduction */
+  #introduction {
+    width: 100%;
+    max-height: 100vh;
+    padding: 7vh 7vw;
+    justify-content: space-evenly;
+
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 4.5vh;
+  }
+
+  .intro-text h2 {
+    font-size: 3.9vh;
+  }
+
+  .intro-text p {
+    width: 100%;
+    font-size: 2vh;
+    margin: 5vh 0;
+    margin-top: 2vh;
+  }
+
+  .intro-links a {
+    font-size: 2.5vh;
+    padding: 2.5vw;
+    border-radius: 10px;
+  }
+
+  .intro-social-links > a {
+    border: none;
+    font-size:4vh;
+  }
+
+  .intro-image {
+    width: 100%;
+  }
+
+  .intro-image > img {
+    width: 100%;
+  }
+  /* About */
+  #about {
+    height: 70vh;
+    padding: 7vh 7vw;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .about-logo {
+    display: none;
+   
+  }
+
+  .about-logo h1 {
+    font-size: 4.5vh;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 3.9vh;
+
+  }
+
+  .about-text p {
+    font-size: 2vh;
+    margin: 5vh 0;
+    margin-top: 2vh;
+  }
+
+  .about-text > a {
+    margin-top: 1.5vh;
+    font-size: 2vh;
+  }
+  /* Skills */
+  #skills {
+    width: 100%;
+    height: 40vh;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .skill-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skill-logo h1 {
+    font-size: 5vh;
+  }
+
+  .skill-images {
+    width: 100%;
+    gap: 1vh;
+  }
+  /* Projects */
+  #projects {
+    min-height: 70vh;
+    padding: 4vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .project-logo {
+    width: 100%;
+    justify-content: center;
+    margin: 5vh;
+  }
+
+  .project-logo h1 {
+    font-size: 5vh;
+  }
+  
+
+  .procover {
+    width: 100%;
+    gap: 2vh;
+  }
+  .myProject {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    border-radius: 10px;
+    
+  }
+  .project-image {
+    width: 100%;
+    height: 25vh;
+  }
+  .project-description {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .project-description h2 {
+    font-size: 4.9vh;
+  }
+
+  .project-description p {
+    font-size: 2vh;
+    margin: 5vh 0;
+    margin-top: 1vh;
+  }
+
+  .pro-link a {
+    font-size: 2.5vh;
+  }
 }
