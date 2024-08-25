@@ -48,7 +48,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -75,6 +74,10 @@ nav li a {
   font-size: 2vw;
   font-weight: 700;
   letter-spacing: 1.5px;
+}
+.ham,
+.res-menu {
+  display: none;
 }
 
 /* Introduction */
@@ -247,13 +250,13 @@ nav li a {
   padding: 4vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .project-logo {
   width: 30%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
@@ -441,15 +444,59 @@ textarea::-webkit-scrollbar {
 }
 
 @media (max-width: 426px) {
+  /* Navigation bar */
+  nav {
+    padding: 2vh 7vw;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .name {
+    font-size: 2.5vh;
+    letter-spacing: 1px;
+  }
+  .ham {
+    display: block;
+    font-size: 3vh;
+  }
+  .res-menu {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    padding: 2vh 4vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 26%,
+      rgba(9, 9, 121, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  .res-menu li {
+    padding: 2vh;
+    text-align: center;
+  }
+
+  .res-menu li a {
+    font-size: 5vh;
+  }
+
   /* Introduction */
   #introduction {
     width: 100%;
     max-height: 100vh;
-    padding: 7vh 7vw;
+    padding:7vw;
+    margin-top: 3vh;
     justify-content: space-evenly;
-
     flex-direction: column;
-    gap: 2vh;
+    gap: 2vh;  
   }
 
   .intro-text {
@@ -479,7 +526,7 @@ textarea::-webkit-scrollbar {
 
   .intro-social-links > a {
     border: none;
-    font-size:4vh;
+    font-size: 4vh;
   }
 
   .intro-image {
@@ -492,7 +539,7 @@ textarea::-webkit-scrollbar {
   /* About */
   #about {
     height: 70vh;
-    padding: 7vh 7vw;
+    padding: 7vw;
 
     justify-content: space-evenly;
     flex-direction: column;
@@ -500,7 +547,6 @@ textarea::-webkit-scrollbar {
 
   .about-logo {
     display: none;
-   
   }
 
   .about-logo h1 {
@@ -513,7 +559,6 @@ textarea::-webkit-scrollbar {
 
   .about-text h2 {
     font-size: 3.9vh;
-
   }
 
   .about-text p {
@@ -551,7 +596,7 @@ textarea::-webkit-scrollbar {
   /* Projects */
   #projects {
     min-height: 70vh;
-    padding: 4vw;
+    padding: 7vw;
     justify-content: space-evenly;
     flex-direction: column;
   }
@@ -565,7 +610,6 @@ textarea::-webkit-scrollbar {
   .project-logo h1 {
     font-size: 5vh;
   }
-  
 
   .procover {
     width: 100%;
@@ -580,7 +624,6 @@ textarea::-webkit-scrollbar {
     flex-direction: column;
     gap: 2vw;
     border-radius: 10px;
-    
   }
   .project-image {
     width: 100%;
@@ -605,5 +648,62 @@ textarea::-webkit-scrollbar {
 
   .pro-link a {
     font-size: 2.5vh;
+  }
+  /* Contact */
+  #contact {
+    height: 90vh;
+    padding: 7vw;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+  }
+
+  .contact-logo {
+    width: 100%;
+  }
+
+  .contact-logo h1 {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  .contact-logo p {
+    font-size: 2vh;
+  }
+
+  .contact-logo p a {
+    font-size: 2vh;
+  }
+
+  .con-link {
+    margin-top: 2vh;
+  }
+
+  .con-link > a {
+    font-size: 4vh;
+    margin-right: 1.5vh;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form form {
+    width: 100%;
+    padding: 4vh 3vw;
+    gap: 1.5vh;
+  }
+
+  .contact-form form > label {
+    font-size: 2.5vh;
+  }
+
+  .contact-form form > input {
+    font-size: 2vh;
+    padding: 2vw;
+  }
+
+  .contact-form form > textarea {
+    font-size: 2vh;
+    padding: 2vh 0.7vw;
   }
 }
