@@ -26,6 +26,23 @@ body {
   width: 100%;
 }
 
+
+.cursor{
+  width: 20px;
+  height: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  scale: 0;
+  border-radius: 50%;
+  background: #fff;
+  transition: all .1s ease;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: difference;
+
+}
 /* main */
 #main {
   width: 100%;
@@ -196,12 +213,12 @@ nav li a {
 
 .about-text p {
   font-size: 1.5vw;
+  margin: 2vw 0;
   font-family: Gilroy;
 }
 
 .about-text > a {
   text-transform: uppercase;
-  margin-top: 1.5vw;
   font-size: 1vw;
   font-family: Gilroy;
 }
@@ -444,6 +461,9 @@ textarea::-webkit-scrollbar {
 }
 
 @media (max-width: 426px) {
+  .cursor{
+    display: none;
+  }
   /* Navigation bar */
   nav {
     padding: 2vh 7vw;
@@ -655,6 +675,7 @@ textarea::-webkit-scrollbar {
     padding: 7vw;
     justify-content: space-evenly;
     flex-direction: column-reverse;
+    gap: 2vh;
   }
 
   .contact-logo {
