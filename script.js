@@ -41,21 +41,7 @@ function mouseFollower() {
       opacity: 0,
     });
   });
-  // document.querySelectorAll(".intro-links a").forEach(function (elem) {
-  //   // elem.removeEventListener("mouseover",function (e) {
-
-  //   // })
-  //   // elem.addEventListener("mouseleave",function (dets) {
-
-  //   //   gsap.to(".cursor", {
-  //   //     x: dets.x,
-  //   //     y: dets.y,
-  //   //     opacity: 1,
-  //   //     scale: 1,
-  //   //     ease: "circ",
-  //   //   });
-  //   // })
-  // })
+  
 }
 mouseFollower();
 function navbarAnimation() {
@@ -79,7 +65,7 @@ function navbarAnimation() {
     } else {
       gsap.to(".res-menu", {
         right: "-100%",
-        duration:.8
+        duration:.8,
       });
       ham.classList = "ri-menu-line";
       flag = true

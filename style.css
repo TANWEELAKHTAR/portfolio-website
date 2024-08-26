@@ -682,7 +682,7 @@ textarea::-webkit-scrollbar {
   }
   /* Contact */
   #contact {
-    height: 90vh;
+    height: 100vh;
     padding: 7vw;
     justify-content: space-evenly;
     flex-direction: column-reverse;
