@@ -31,11 +31,34 @@ function mouseFollower() {
 }
 mouseFollower();
 
+function introAnimation() {
+  let tl = gsap.timeline();
+  tl.from(".name,nav a",{
+      y: 100,
+      delay: 0.3,
+      opacity: 0,
+      stagger: 0.5,
+    },"a");
+  tl.from(".intro-text h1,.intro-text h2,.intro-text p,.intro-text a",{
+      y: 100,
+      delay: 0.7,
+      opacity: 0,
+      stagger: 0.4,
+    },"a");
+  tl.from(".intro-image img",{
+      opacity: 0,
+      rotateY: 180,
+      delay: 0.4,
+      duration: 5,
+      repeat: 0,
+    },"a");
+}
+introAnimation();
 function aboutAnimation() {
   gsap.from(".about-logo,.about-text h2,.about-text p,.about-text a ", {
     scrollTrigger: {
-      trigger: about,
-      start: "top 60%",
+      trigger: "#about",
+      start: "top 70%",
       end: "bottom bottom",
       scrub: 2,
     },
@@ -47,9 +70,10 @@ function aboutAnimation() {
 aboutAnimation();
 
 function skillAnimation() {
-  gsap.from(".skill-logo", {
+  let tl = gsap.timeline();
+  tl.from(".skill-logo", {
     scrollTrigger: {
-      trigger: skills,
+      trigger: "#skills",
       start: "top 80%",
       end: "bottom 20%",
       scrub: 2,
@@ -59,7 +83,7 @@ function skillAnimation() {
     delay: 0.1,
   });
   document.querySelectorAll(".skill-images img").forEach(function (elem) {
-    gsap.from(elem, {
+    tl.from(elem, {
       scrollTrigger: {
         trigger: elem,
         start: "top 80%",
@@ -74,10 +98,11 @@ function skillAnimation() {
 skillAnimation();
 
 function projectAnimation() {
-  gsap.from(".project-logo", {
+  let tl = gsap.timeline();
+  tl.from(".project-logo", {
     scrollTrigger: {
       trigger: projects,
-      start: "top 90%",
+      start: "top 70%",
       end: "bottom 20%",
       scrub: 2,
     },
@@ -86,7 +111,7 @@ function projectAnimation() {
     delay: 0.1,
   });
   document.querySelectorAll(".myProject").forEach(function (elem) {
-    gsap.from(elem, {
+    tl.from(elem, {
       scrollTrigger: {
         trigger: elem,
         start: "top 70%",

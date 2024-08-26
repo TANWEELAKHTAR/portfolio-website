@@ -119,11 +119,13 @@ nav li a {
 .intro-text h1 {
   font-size: 5vw;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .intro-text h2 {
   font-size: 3vw;
   font-weight: 500;
+  overflow: hidden;
 }
 
 .intro-text p {
@@ -133,6 +135,7 @@ nav li a {
   letter-spacing: 0.8px;
   margin-bottom: 1.5vw;
   font-family: Gilroy;
+  overflow: hidden;
 }
 
 .intro-links {
@@ -184,6 +187,7 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about-logo {
@@ -231,6 +235,8 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
 }
 
 .skill-logo {
@@ -268,6 +274,8 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+
 }
 
 .project-logo {
@@ -354,6 +362,8 @@ nav li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
 }
 
 .contact-logo {
