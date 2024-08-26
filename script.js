@@ -46,6 +46,7 @@ function mouseFollower() {
 mouseFollower();
 function navbarAnimation() {
   let ham = document.querySelector(".ham i");
+  let a = document.querySelectorAll(".res-menu li a");
   flag = false;
   let tl = gsap.timeline();
   ham.addEventListener("click", function (e) {
@@ -71,6 +72,17 @@ function navbarAnimation() {
       flag = true
     }
   });
+  a.forEach(function (e) {
+    e.addEventListener("click",function(){
+      tl.to(".res-menu", {
+        right: "-100%",
+        duration:.8,
+      });
+      ham.classList = "ri-menu-line";
+      flag = true;
+    })
+    
+  })
 }
 navbarAnimation();
 function introAnimation() {
