@@ -2,6 +2,20 @@ function mouseFollower() {
   let intro = document.querySelector("#introduction");
   let text = document.querySelector(".intro-text");
   let image = document.querySelector(".intro-image img");
+
+  let links = document.querySelectorAll(".intro-links a")
+  links.forEach(function (e) {
+    console.log(e);
+    e.addEventListener("mousemove", function (dets) {
+      gsap.to(".cursor", {
+       
+        opacity: 1,
+       
+      });
+    }
+  })
+
+
   intro.addEventListener("mousemove", function (dets) {
     gsap.to(".cursor", {
       x: dets.x,
@@ -140,11 +154,11 @@ function skillAnimation() {
   tl.from(".skill-logo", {
     scrollTrigger: {
       trigger: "#skills",
-      start: "top 80%",
+      start: "top 100%",
       end: "bottom 20%",
       scrub: 2,
     },
-    opacity: 0,
+    // opacity: 0,
     y: -100,
     delay: 0.1,
   });
@@ -190,3 +204,29 @@ function projectAnimation() {
   });
 }
 projectAnimation();
+ function contactAnimation() {
+   let tl = gsap.timeline()
+   tl.from(".contact-logo",{
+     scrollTrigger: {
+       trigger: "#contact",
+       start: "top 10%",
+       end: "bottom bottom",
+       scrub: 2,
+     },
+     opacity: 0,
+    y: -100,
+    delay: 0.1,
+   })
+   tl.from(".contact-form",{
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 30%",
+      end: "bottom bottom",
+      scrub: 2,
+    },
+    opacity: 0,
+    y: -100,
+    delay: 0.2,
+   })
+ }
+ contactAnimation();

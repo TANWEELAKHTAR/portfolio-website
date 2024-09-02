@@ -145,7 +145,7 @@ nav li a {
   gap: 1.5vw;
 }
 
-.intro-links a {
+.intro-links>a {
   text-decoration: none;
   font-size: 1.2vw;
   letter-spacing: 0.5px;
