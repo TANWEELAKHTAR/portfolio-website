@@ -27,22 +27,7 @@ body {
 }
 
 
-.cursor{
-  width: 20px;
-  height: 20px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index:1;
-  opacity: 0;
-  scale: 0;
-  border-radius: 50%;
-  background: #fff;
-  transition: all .1s ease;
-  transform: translate(-50%,-50%);
-  mix-blend-mode: difference;
 
-}
 /* main */
 #main {
   width: 100%;
@@ -158,6 +143,7 @@ nav li a {
   text-decoration: none;
   border: none;
   font-size: 2.5vw;
+  margin-left: 1.5vw;
 }
 
 .intro-image {
