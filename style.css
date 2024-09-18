@@ -286,10 +286,7 @@ nav li a {
   gap: 1vw;
 }
 
-::-webkit-scrollbar {
-  display: none;
-  scroll-behavior: smooth;
-}
+
 
 .myProject {
   width: 100%;
@@ -309,7 +306,9 @@ nav li a {
   overflow: hidden;
   border-radius: 10px;
   object-fit: cover;
-  background: #000;
+}
+.project-image img{
+  object-fit: cover;
 }
 
 .project-description {
@@ -328,7 +327,7 @@ nav li a {
 }
 
 .project-description p {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-family: Gilroy;
   margin-bottom: 1vw;
 }
@@ -458,9 +457,8 @@ textarea::-webkit-scrollbar {
 
 .rights{
   width: 100%;
-  font-size: 1.2vw;
   text-align: center;
-  padding: 2vw;
+  padding: 3vw;
   font-family: Gilroy;
 }
 
