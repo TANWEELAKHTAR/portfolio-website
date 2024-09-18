@@ -456,6 +456,14 @@ textarea::-webkit-scrollbar {
   background: #002d62;
 }
 
+.rights{
+  width: 100%;
+  font-size: 1.2vw;
+  text-align: center;
+  padding: 2vw;
+  font-family: Gilroy;
+}
+
 @media (max-width: 426px) {
   .cursor{
     display: none;
