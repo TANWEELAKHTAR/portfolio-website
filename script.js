@@ -15,13 +15,13 @@ function navBar() {
   window.addEventListener("scroll", function () {
     let st = window.scrollY || document.documentElement.scrollTop;
     if (st > lastScrollTop) {
-      gsap.to(navbar,{
-        y:"-100%"
-      })
+      gsap.to(navbar, {
+        y: "-100%",
+      });
     } else {
-      gsap.to(navbar,{
-        y:"0%"
-      })
+      gsap.to(navbar, {
+        y: "0%",
+      });
     }
     lastScrollTop = st;
   });
@@ -49,23 +49,22 @@ function navbarAnimation() {
     } else {
       gsap.to(".res-menu", {
         right: "-100%",
-        duration:.8,
-      });
-      ham.classList = "ri-menu-line";
-      flag = true
-    }
-  });
-  a.forEach(function (e) {
-    e.addEventListener("click",function(){
-      tl.to(".res-menu", {
-        right: "-100%",
-        duration:.8,
+        duration: 0.8,
       });
       ham.classList = "ri-menu-line";
       flag = true;
-    })
-    
-  })
+    }
+  });
+  a.forEach(function (e) {
+    e.addEventListener("click", function () {
+      tl.to(".res-menu", {
+        right: "-100%",
+        duration: 0.8,
+      });
+      ham.classList = "ri-menu-line";
+      flag = true;
+    });
+  });
 }
 navbarAnimation();
 function introAnimation() {
@@ -171,20 +170,20 @@ function projectAnimation() {
   });
 }
 projectAnimation();
- function contactAnimation() {
-   let tl = gsap.timeline()
-   tl.from(".contact-logo",{
-     scrollTrigger: {
-       trigger: "#contact",
-       start: "top 80%",
-       end: "bottom bottom",
-       scrub: 2,
-     },
-     opacity: 0,
+function contactAnimation() {
+  let tl = gsap.timeline();
+  tl.from(".contact-logo", {
+    scrollTrigger: {
+      trigger: "#contact",
+      start: "top 80%",
+      end: "bottom bottom",
+      scrub: 2,
+    },
+    opacity: 0,
     y: -100,
     // delay: 0.1,
-   })
-   tl.from(".contact-form",{
+  });
+  tl.from(".contact-form", {
     scrollTrigger: {
       trigger: "#contact",
       start: "top 80%",
@@ -194,6 +193,6 @@ projectAnimation();
     opacity: 0,
     y: -100,
     delay: 0.2,
-   })
- }
- contactAnimation();
+  });
+}
+contactAnimation();

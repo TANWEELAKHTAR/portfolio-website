@@ -305,9 +305,11 @@ nav li a {
   height: 25vh;
   overflow: hidden;
   border-radius: 10px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .project-image img{
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
